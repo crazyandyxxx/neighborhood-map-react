@@ -3,6 +3,9 @@
 ### Description
 Udacity Full Stack Web Developer Nanodegree Project
 
+### Demo
+You can run a hosted version of the app at **[https://vmlellis.github.io/neighborhood-map-react/](https://vmlellis.github.io/neighborhood-map-react/)**.
+
 ### Skills used
 - Javascript
 - CSS
