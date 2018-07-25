@@ -21,4 +21,4 @@ You can run a hosted version of the app at **[https://vmlellis.github.io/neighbo
 - `yarn build`
 
 ### Screenshoot
-<img src="./screenshoot.png"/>
+<img src="./screenshoot.PNG"/>
