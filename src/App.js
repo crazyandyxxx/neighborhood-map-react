@@ -58,7 +58,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Route exact path="/" render={() => (
+        <Route path="/" render={() => (
           <div className="app-content">
             <SideBar
               SidebarActive={this.state.sidebarActive}
