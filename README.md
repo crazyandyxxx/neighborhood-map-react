@@ -18,4 +18,4 @@ Udacity Full Stack Web Developer Nanodegree Project
 - `yarn build`
 
 ### Screenshoot
-<img src="./screenshoot.png"/>
+<img src="./screenshoot.PNG"/>
