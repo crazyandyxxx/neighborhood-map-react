@@ -16,3 +16,6 @@ Udacity Full Stack Web Developer Nanodegree Project
 
 ### Steps to run (production mode)
 - `yarn build`
+
+### Screenshoot
+<img src="./screenshoot.png"/>
