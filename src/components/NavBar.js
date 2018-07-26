@@ -10,14 +10,18 @@ class NavBar extends Component {
   }
 
   render() {
-    const { OnToogleSidebar, SidebarActive } = this.props
+    const { OnToogleSidebar } = this.props
 
     return (
       <div className="navbar">
-        <a href="javascript:undefined" className="sidebarLink"
-          onClick={() => this.toogleButton() || OnToogleSidebar() }>
+        <button className="sidebarLink"
+          onClick={(e) => {
+            e.preventDefault()
+            this.toogleButton()
+            OnToogleSidebar()
+          }}>
           <FontAwesomeIcon icon={this.state.isActive ? faArrowLeft : faBars } />
-        </a>
+        </button>
         <div className="title">Hamburguerias do Bairro</div>
       </div>
     )

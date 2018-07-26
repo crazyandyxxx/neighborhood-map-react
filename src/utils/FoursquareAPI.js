@@ -30,5 +30,6 @@ export const getVenues = (lat, lng) => {
 
   return fetch(url)
     .then(res => res.json())
-    .then(data => data.response.venues);
+    .then(data => data.response.venues)
+    .catch(error => console.error(error))
 }

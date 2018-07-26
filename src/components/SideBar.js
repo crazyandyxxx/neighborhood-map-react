@@ -15,7 +15,7 @@ class SideBar extends Component {
         <ol className='location-list' role='tablist'>
           {locations.map((marker) => (
             <li key={marker.id} role='tab'>
-              <button className="location" tabIndex ="0"
+              <button className={marker.isMarkerShown ? 'location selected' : 'location'} tabIndex ="0"
                 onClick={() => OnClickText(marker)}>
                   {marker.name}
               </button>

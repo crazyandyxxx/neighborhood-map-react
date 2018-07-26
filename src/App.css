@@ -17,10 +17,15 @@
 
 .sidebar.hidden {
   width: 0px;
+  padding: 0px;
+}
+
+.sidebar.hidden .location-list {
   display: none;
-  /*display: none;*/
-  /*position: fixed;*/
-  /*left: 250px;*/
+}
+
+.sidebar.hidden .input-wrapper {
+  display: none;
 }
 
 .sidebar .input-wrapper {
@@ -60,6 +65,11 @@
   background-color: transparent;
   color: aliceblue;
   border: none;
+  outline: none;
+}
+
+.sidebar .location.selected {
+  color: orange;
 }
 
 .content {
@@ -73,8 +83,13 @@
 }
 
 .content .navbar .sidebarLink {
+  cursor: pointer;
   color: white;
   float: left;
+  background: transparent;
+  border: none;
+  outline:none;
+  font-size: initial;
 }
 
 .content .navbar .title {

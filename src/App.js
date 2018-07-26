@@ -18,8 +18,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    FoursquareAPI.getVenues(lat, lng).then((venues) =>{
-      console.log(venues);
+    FoursquareAPI.getVenues(lat, lng).then((venues) => {
+      if (!venues) return;
       const locations = venues.map((venue) => {
         return {
           id: venue.id,
@@ -32,7 +32,6 @@ class App extends Component {
       })
 
       this.setState({ locations: locations });
-      console.log(this.state);
     })
   }
 
@@ -46,7 +45,6 @@ class App extends Component {
   }
 
   updateQuery = (query) => {
-    console.log(query);
     this.setState({ query: query });
   }
 
@@ -67,9 +65,7 @@ class App extends Component {
               query={this.state.query}
               locations={this.filterLocations(this.state.query)} />
             <div className="content">
-              <NavBar
-                OnToogleSidebar={this.toogleSidebar}
-                SideBarActive={this.state.sidebarActive} />
+              <NavBar OnToogleSidebar={this.toogleSidebar} />
               <MapComponent lat={lat} lng={lng}
                 locations={this.filterLocations(this.state.query)}
                 OnMarkerClick={this.toogleMarkerLocation} />
