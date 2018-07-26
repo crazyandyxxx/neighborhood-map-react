@@ -29,7 +29,13 @@ export const getVenues = (lat, lng) => {
   const url = `${API}/search?${queryParams(params)}`
 
   return fetch(url)
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) { throw res }
+      return res.json()
+    })
     .then(data => data.response.venues)
-    .catch(error => console.error(error))
+    .catch(error => {
+      console.error(error)
+      window.alert("Error: Failed to get venues in Fourquare API")
+    })
 }
