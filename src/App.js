@@ -19,7 +19,10 @@ class App extends Component {
 
   componentDidMount() {
     FoursquareAPI.getVenues(lat, lng).then((venues) => {
-      if (!venues) return;
+      if (!venues) {
+        window.alert("Error: Failed to get venues in Fourquare API")
+        return;
+      }
       const locations = venues.map((venue) => {
         return {
           id: venue.id,
