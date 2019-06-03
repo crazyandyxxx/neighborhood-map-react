@@ -1,10 +1,14 @@
 # Neighborhood Map
 
 ### Description
-Udacity Full Stack Web Developer Nanodegree Project
+This single page app uses the Google maps API and the location-based service Foursquare API to list some restaurants near Peking University. The project was built for the Udacity Front End Nanodegree Program. 
 
-### Demo
-You can run a hosted version of the app at **[https://vmlellis.github.io/neighborhood-map-react/](https://vmlellis.github.io/neighborhood-map-react/)**.
+## How to run this app
+
+* Open the root folder of the repository in a terminal
+* Get started by intalling npm, please follow this tutorial - http://blog.npmjs.org/post/85484771375/how-to-install-npm
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
 
 ### Skills used
 - Javascript
@@ -13,12 +17,3 @@ You can run a hosted version of the app at **[https://vmlellis.github.io/neighbo
 - FourSquare API (https://developer.foursquare.com/docs/api/venues/search)
 - React
 
-### Steps to run (development mode)
-- `yarn install`
-- `yarn start`
-
-### Steps to run (production mode)
-- `yarn build`
-
-### Screenshoot
-<img src="./screenshoot.PNG"/>

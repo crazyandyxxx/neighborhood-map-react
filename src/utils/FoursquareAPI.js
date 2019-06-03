@@ -2,10 +2,10 @@ import { CLIENT_ID, CLIENT_SECRET } from './credentials';
 
 const API = "https://api.foursquare.com/v2/venues";
 
-const VERSION = '20180724'
+const VERSION = '20190602'
 
 const CATEGORIES = {
-  hamburgueria: '4bf58dd8d48988d16c941735'
+  food: '4d4b7105d754a06374d81259'
 }
 
 const queryParams = (params) => {
@@ -23,7 +23,7 @@ export const getVenues = (lat, lng) => {
     ll: `${lat},${lng}`,
     categoryId: `${categoryId}`,
     radius: 1000,
-    limit: 50
+    limit: 20
   }
 
   const url = `${API}/search?${queryParams(params)}`

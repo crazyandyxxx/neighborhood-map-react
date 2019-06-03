@@ -7,8 +7,8 @@ import * as FoursquareAPI from './utils/FoursquareAPI'
 import escapeRegExp from 'escape-string-regexp'
 import './App.css'
 
-const lat = -19.9152571
-const lng = -43.9182916
+const lat = 39.992634
+const lng = 116.310871
 
 class App extends Component {
   state = {

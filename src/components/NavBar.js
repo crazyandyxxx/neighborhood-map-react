@@ -18,7 +18,7 @@ class NavBar extends Component {
           onClick={() => this.toogleButton() || OnToogleSidebar()}>
           <FontAwesomeIcon icon={this.state.isActive ? faArrowLeft : faBars } />
         </button>
-        <div className="title">Hamburguerias do Bairro</div>
+        <div className="title">Nearby restaurants</div>
       </div>
     )
   }
